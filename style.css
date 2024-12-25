@@ -5,8 +5,8 @@
 }
 
 button {
-    font-size: 30px;
-    margin: 30px;
+    width: calc(100%);
+    height: calc(100% / 4);
 }
 
 
@@ -34,9 +34,8 @@ body,
 }
 
 .box-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: inline-flex;
+    flex-wrap: wrap;
     height: 400px;
     width: 400px;
     border: 2px solid black;
@@ -45,4 +44,16 @@ body,
     margin-bottom: 0;
     margin-left: 50px;
     background-color: white;
+}
+
+.small-box {
+    width: calc(100% / 16);
+    height: calc(100% / 16);
+    background-color: white;
+}
+
+#userInputGridSize {
+    font-size: 30px;
+    background-color: whitesmoke;
+    text-align: center;
 }
